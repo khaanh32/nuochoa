@@ -1,0 +1,13 @@
+<?php
+class Index extends DController {
+    public function __construct() {
+        parent::__construct();
+    }
+
+    public function index() {
+        $this->load->view('header');
+        $this->load->view('home');
+        $this->load->view('footer');
+    }
+}
+?>
