@@ -11,21 +11,15 @@ class Load{
         if($data == true){
             extract($data);
         }
-        include 'app/views/'.$fileName.'.php ';
-
-
-    }
-    public function model($fileName){
-        include 'app/models/'.$fileName.'.php ';
-        return new $fileName();
-        
+        // SỬA: Xóa khoảng trắng thừa trong đường dẫn
+        include 'app/views/'.$fileName.'.php';
     }
     
-
-        
- }
-   
- 
-
+    public function model($fileName){
+        // SỬA: Xóa khoảng trắng thừa trong đường dẫn
+        include 'app/models/'.$fileName.'.php';
+        return new $fileName();
+    }
+}
 
 ?>

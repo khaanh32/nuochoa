@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Perfume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="/web_perfume/public/css/style.css">
-    <link rel="stylesheet" href="/web_perfume/public/css/login-register-style.css">
+<link rel="stylesheet" href="/web_perfume/public/css/style.css">
+<link rel="stylesheet" href="/web_perfume/public/css/login-register-style.css">
 </head>
 <body>
     <header>
@@ -58,38 +58,4 @@
             }
         });
     </script>
-    <style>
-        .header-icons .user-menu {
-            position: relative;
-            display: inline-block;
-            cursor: pointer;
-        }
-        .header-icons .user-menu .user-name {
-            color: #333;
-            text-decoration: none;
-            padding: 0 10px;
-        }
-        .header-icons .user-menu .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            right: 0; /* Align dropdown to the right */
-            top: 100%; /* Position below the user name */
-        }
-        .header-icons .user-menu .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-        .header-icons .user-menu .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-        .header-icons .user-menu .dropdown-content.show {
-            display: block;
-        }
-    </style>
+    

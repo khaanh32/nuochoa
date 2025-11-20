@@ -5,9 +5,11 @@
 
      public function __construct()
      {
-        session_start();
+        // Kiểm tra session trước khi start để tránh warning
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
         $this->load=new Load();
-         
      }
 
      public function view($viewName, $data = [], $layout = "main") {

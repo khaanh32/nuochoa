@@ -25,7 +25,10 @@
         public function updatecategory($table_category_product,$data,$cond){
             return $this->db->update($table_category_product, $data,$cond); 
         }
-
+    public function deletecategory($table_category_product, $cond){
+            // Gọi hàm delete chung từ Database.php
+            return $this->db->delete($table_category_product, $cond);
+        }
         
     }
 ?>
